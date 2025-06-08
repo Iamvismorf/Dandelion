@@ -1,0 +1,80 @@
+{
+  // 󰮯
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+	  "source": "/home/vismorf/system/home-manager/modules/fastfetch/moomin1.jpg",
+	  //"source": "/home/vismorf/system/home-manager/modules/fastfetch/flower.png",
+	  "type": "kitty",
+	  "height": 8,
+	  "padding":{
+	   "top": 3,
+     	   "left": 5
+	  }
+  },
+  "display": {
+    "separator": " "
+  },
+
+  "modules": [
+    "break",
+    //{"type": "Font"},
+    //{"type": "TerminalFont"},
+    {
+     "type": "custom",
+     "format": "         Vismorf \u001b[38;5;155m ",
+     //"format": "           Vismorf \u001b[38;5;160m 0󰓥  \u001b[38;5;33m0 ", // play with colour 
+     "outputColor": "38;2;255;255;255"
+    },
+
+    "break",
+    {
+    "type": "os",
+    "key": "  ",
+    "keyColor": "blue",
+    "format": "{3}"
+    },
+    {
+      "type": "kernel",
+      "key": "  ",
+      "keyColor": "red"
+    },
+    {
+      "type": "packages",
+      "key": " 󰏖 ",
+      "keyColor": "yellow",
+      "format": "{1}"
+    },
+    {
+      "type": "shell",
+      "key": " #!",
+      "keyColor": "light_white"
+    },
+    {
+      "type": "wm",
+      "key": "  ",
+      "keyColor": "green",
+      "format": "{2}"
+
+
+    },
+    {
+      "type": "terminal",
+      "key": " 󰊠 ",
+      "keyColor": "light_white"
+    },
+    {
+      "type": "memory",
+      "key": "  ",
+      "keyColor": "light_red",
+      "format": "{1} / {2}"
+    },
+    {
+      "type": "custom",
+      //"format": "▂▂ ▂▂ ▂▂ ▂▂ ▂▂ ▂▂"
+      "format": "▄▄ \u001b[31m▄▄ \u001b[33m▄▄ \u001b[34;1m▄▄ \u001b[32m▄▄ \u001b[36m▄▄ \u001b[35m▄▄ " 
+    },
+    "break"
+  ]
+}
+// title colour
+//custom color palette + rectangles with colours
