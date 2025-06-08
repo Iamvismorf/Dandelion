@@ -63,11 +63,11 @@ return {
 						options = {
 							nixos = {
 								-- expr = '(builtins.getFlake "/home/vismorf/system").nixosConfigurations.nixos.options',
-								expr = '(builtins.getFlake "/home/vismorf/system").nixosConfigurations.nixos.options',
+								expr = '(builtins.getFlake "github:Iamvismorf/Areion").nixosConfigurations.nixos.options',
 							},
 							home_manager = {
 								-- expr = '(builtins.getFlake "/home/vismorf/system").homeConfigurations.vismorf.options',
-								expr = '(builtins.getFlake "/home/vismorf/system").homeConfigurations.vismorf.options',
+								expr = '(builtins.getFlake "github:Iamvismorf/Areion").homeConfigurations.vismorf.options',
 							},
 						},
 					},
