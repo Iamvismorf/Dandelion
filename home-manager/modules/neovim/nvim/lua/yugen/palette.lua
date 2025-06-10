@@ -9,7 +9,10 @@ local variants = {
 		color500 = "#505050",
 		color600 = "#303030",
 		color700 = "#151515",
-		color800 = "#000000", -- change if needed
+		-- color800 = "#000000", -- change if needed
+
+		-- color800 = "#131416",
+		color800 = "#0c0c0c",
 
 		-- yugen
 		-- primary = "#ffbe89",
