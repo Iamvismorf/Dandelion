@@ -1,4 +1,4 @@
-base00: "#000000"
+base00: "#0c0c0c"
 base01: "#151515"
 base02: "#303030"
 base03: "#505050"
@@ -8,14 +8,14 @@ base05: "#fafafa"
 base06: "#a9a9a9"
 base07: "#d4d4d4"
 
-base08: "#d83a42" ##d83a42
-base09: "#729af0"
-base0A: "#ca9654" ##ca9654
-base0B: "#beff89" # string 43a25a beff89
+base08: "#ff2d2d" ##d83a42
+base09: "#dc8750"
+base0A: "#ebb369" ##ca9654
+base0B: "#00a800" # string 43a25a beff89
 base0C: "#729af0"   # 2f77ce blue
-base0D: "#ffbe89"
-base0E: "#696969" #keyword
-base0F: "#696969"
+base0D: "#729af0"
+base0E: "#7b61ff" #keyword
+base0F: "#6c54b6"
 
 
 

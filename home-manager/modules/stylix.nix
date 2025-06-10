@@ -10,7 +10,6 @@
     firefox.profileNames = ["vismorf"];
     neovim.enable = false;
     yazi.enable = false;
-    ghostty.enable = false;
     # fuzzel.enable = true;
     # gtk.enable = true;
     # qt.enable = true;
