@@ -21,6 +21,7 @@
       };
       character = {
         error_symbol = "[✗](bold red) ";
+        success_symbol = "[❯](green)";
       };
     };
   };
