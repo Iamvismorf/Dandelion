@@ -7,9 +7,13 @@
 -- 		end
 -- 	end,
 -- })
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.o.winborder = "single"
+vim.o.laststatus = 3
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -25,6 +29,17 @@ vim.opt.shiftwidth = 3
 
 vim.opt.swapfile = false
 vim.opt.backup = false
+vim.o.winbar = " "
+-- local events = { "VimEnter", "BufEnter", "BufModifiedSet", "WinEnter", "WinLeave" }
+-- vim.api.nvim_create_autocmd(events, {
+-- 	callback = function()
+-- 		vim.opt_local.winbar = "%{%v:lua.require'nvim-navic'.get_location()%} %= %m%t"
+-- 		if vim.bo.filetype == "neo-tree" then
+-- 			vim.opt_local.winbar = nil
+-- 		end
+-- 	end,
+-- })
+-- vim.o.winbar = "%=%m %t"
 
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = { "neo-tree" },
@@ -32,5 +47,6 @@ vim.api.nvim_create_autocmd("FileType", {
 		require("ufo").detach()
 		vim.opt_local.foldenable = false
 		vim.opt_local.foldcolumn = "0"
+		vim.opt_local.winbar = nil
 	end,
 })
