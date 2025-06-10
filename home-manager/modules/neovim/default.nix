@@ -2,9 +2,11 @@
   pkgs,
   lib,
   config,
+  args,
   ...
 }: let
-  configDirPath = "${config.home.homeDirectory}/system/home-manager/modules/neovim/nvim";
+  # configDirPath = "${config.home.homeDirectory}/system/home-manager/modules/neovim/nvim";
+  configDirPath = "/home/vismorf/system/home-manager/modules/neovim/nvim";
   configSrc = config.lib.file.mkOutOfStoreSymlink configDirPath;
 in {
   programs.neovim = {
@@ -16,6 +18,7 @@ in {
   };
   home.file.".config/nvim" = {
     source = configSrc;
+    recursive = true;
   };
   # linters, formatter, lsp
   home.packages = with pkgs; [
@@ -23,7 +26,6 @@ in {
     gcc
     gnumake
     tree-sitter
-
     nodejs
 
     # lsp
@@ -38,4 +40,6 @@ in {
     alejandra
     stylua
   ];
+
+  nix.nixPath = ["nixpkgs=${args.nixpkgs}"];
 }
