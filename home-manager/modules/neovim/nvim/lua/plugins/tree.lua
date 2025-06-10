@@ -36,9 +36,21 @@ return {
 	lazy = false, -- neo-tree will lazily load itself
 
 	opts = {
+		default_component_configs = {
+			indent = {
+				with_expanders = true,
+			},
+		},
+		close_if_last_window = true,
+		source_selector = {
+			winbar = false, -- disables the top bar
+			statusline = false, -- disables from showing in the status line (if set)
+		},
+
 		filesystem = {
 			follow_current_file = {
 				enabled = true,
+				leave_dirs_open = true,
 			},
 			filtered_items = {
 				hide_dotfiles = false,
@@ -56,6 +68,7 @@ return {
 		window = {
 			mappings = {
 				["/"] = "noop",
+				["f"] = "noop",
 				["<esc>"] = "noop",
 				["*"] = "expand_all_nodes",
 				-- ["<cr>"] = "open",
