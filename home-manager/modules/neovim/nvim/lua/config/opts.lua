@@ -29,7 +29,7 @@ vim.opt.shiftwidth = 3
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.o.winbar = " "
+-- vim.o.winbar = " "
 -- local events = { "VimEnter", "BufEnter", "BufModifiedSet", "WinEnter", "WinLeave" }
 -- vim.api.nvim_create_autocmd(events, {
 -- 	callback = function()

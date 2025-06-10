@@ -25,7 +25,7 @@ return {
 	-- 			depth_limit = 6,
 	-- 		})
 
-	-- 		-- vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
+	-- 		vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 	-- 	end,
 	-- },
 	-- {
