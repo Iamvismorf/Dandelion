@@ -2,11 +2,12 @@
   programs.ghostty = {
     enable = true;
     settings = {
-      # font-family = lib.mkForce "Hack nerd font";
+      font-family = lib.mkForce "Hack Nerd Font";
       font-style = "bold";
       font-size = 12;
       adjust-cell-height = "20%";
       link-url = false;
+      theme = "yugen";
     };
     themes = {
       yugen = {
@@ -50,8 +51,8 @@
           "3=#d6a432"
           "11=#d6a432"
 
-          "#3=#dc8750"
-          "#11=#dc8750"
+          #3=#dc8750
+          #11=#dc8750
         ];
       };
     };
