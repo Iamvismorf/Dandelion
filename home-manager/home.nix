@@ -10,8 +10,10 @@
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
   imports = [
+    # ./modules/style.nix
     ./modules/packages.nix
     ./modules/starship.nix
+    ./modules/nh.nix
     ./modules/neovim/default.nix
     ./modules/ghostty.nix
     ./modules/yazi.nix

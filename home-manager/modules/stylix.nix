@@ -7,9 +7,18 @@
   stylix.enable = true;
   stylix.autoEnable = true; # whether to apply to .target.<target> automatically
   stylix.targets = {
-    firefox.profileNames = ["vismorf"];
-    neovim.enable = false;
+    ghostty.enable = false;
+    firefox = {
+      enable = true;
+      profileNames = ["vismorf"];
+      colorTheme.enable = false;
+    };
+    neovim = {
+      enable = false;
+      plugin = false;
+    };
     yazi.enable = false;
+
     # fuzzel.enable = true;
     # gtk.enable = true;
     # qt.enable = true;
@@ -24,20 +33,22 @@
   stylix.fonts = {
     serif = {
       package = pkgs.atkinson-hyperlegible-next;
-      name = "AtkinsonHyperlegibleNext";
+      # name = "AtkinsonHyperlegibleNext-Medium";
+      name = "Atkinson Hyperlegible Next Medium";
     };
     sansSerif = {
       package = pkgs.atkinson-hyperlegible-next;
-      name = "AtkinsonHyperlegibleNext";
+      # name = "AtkinsonHyperlegibleNext-Medium";
+      name = "Atkinson Hyperlegible Next Medium";
     };
     monospace = {
       package = pkgs.nerd-fonts.hack;
       name = "Hack Nerd Font";
     };
-    emoji = {
-      package = pkgs.noto-fonts-emoji;
-      name = "Noto Color Emoji";
-    };
+    # emoji = {
+    #   package = pkgs.noto-fonts-emoji;
+    #   name = "Noto Color Emoji";
+    # };
     sizes = {
       applications = 10;
       desktop = 10;

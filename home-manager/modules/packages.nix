@@ -9,7 +9,7 @@
   };
 
   home.packages = with pkgs; [
-    # fonts
+    #fonts
     nerd-fonts.hack
     nerd-fonts.symbols-only
     nerd-fonts.jetbrains-mono
@@ -18,10 +18,14 @@
     papirus-icon-theme
     atkinson-hyperlegible-next
 
+    kdePackages.qt6ct
+    libsForQt5.qt5ct
+
     #aesthetics
     swww
     waypaper
     hyprpicker
+    kdePackages.dolphin
 
     fuzzel
     firefox

@@ -5,9 +5,10 @@
   args,
   ...
 }: let
-  # configDirPath = "${config.home.homeDirectory}/system/home-manager/modules/neovim/nvim";
-  configDirPath = "/home/vismorf/system/home-manager/modules/neovim/nvim";
+  configDirPath = "${config.home.homeDirectory}/system/home-manager/modules/neovim/nvim";
+  # configDirPath = "/home/vismorf/system/home-manager/modules/neovim/nvim";
   configSrc = config.lib.file.mkOutOfStoreSymlink configDirPath;
+  # configDirPath = ./nvim;
 in {
   programs.neovim = {
     enable = true;
@@ -17,9 +18,12 @@ in {
     ];
   };
   home.file.".config/nvim" = {
-    source = configSrc;
-    recursive = true;
+    # source = configSrc;
+    # recursive = true;
+    source = ./nvim;
   };
+  # xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "/home/vismorf/system/home-manager/modules/neovim/nvim/";
+  # xdg.configFile."nvim".recursive = true;
   # linters, formatter, lsp
   home.packages = with pkgs; [
     # build deps
