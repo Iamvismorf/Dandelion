@@ -14,7 +14,7 @@
     in {
       # system = "sudo nixos-rebuild switch --flake ${flakePath}";
       # home = "home-manager switch --flake ${flakePath}";
-      system = "nh os switch ${flakePath}";
+      nixos = "nh os switch ${flakePath}";
       home = "nh home switch ${flakePath}";
 
       homecollect = "nix-collect-garbage -d";
