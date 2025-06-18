@@ -14,7 +14,8 @@
     ./modules/packages.nix
     ./modules/starship.nix
     ./modules/nh.nix
-    ./modules/neovim/default.nix
+    ./modules/nixcats/default.nix
+    # ./modules/neovim/default.nix
     ./modules/ghostty.nix
     ./modules/yazi.nix
     ./modules/firefox/firefox.nix
@@ -36,8 +37,8 @@
   wayland.windowManager.hyprland.systemd.enable = false;
 
   home.sessionVariables = {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
+    EDITOR = "vixmeow";
+    VISUAL = "vixmeow";
     #NIXOS_OZONE_WL = "1";
     GDK_BACKEND = "wayland";
     OZONE_PLATFORM = "wayland";
