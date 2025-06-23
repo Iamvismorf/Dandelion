@@ -1,6 +1,7 @@
 {
   description = "system flake";
   inputs = {
+    nixCats.url = "github:BirdeeHub/nixCats-nvim";
     nh = {
       url = "github:nix-community/nh";
       inputs.nixpkgs.follows = "nixpkgs";

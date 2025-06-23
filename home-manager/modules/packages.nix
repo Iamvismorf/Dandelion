@@ -12,7 +12,7 @@
     #fonts
     nerd-fonts.hack
     nerd-fonts.symbols-only
-    nerd-fonts.jetbrains-mono
+    # nerd-fonts.jetbrains-mono
     font-awesome
     material-symbols
     papirus-icon-theme
@@ -30,6 +30,13 @@
     fuzzel
     firefox
     waybar
+    
+    #screenshot
+    grim
+    slurp
+    hyprshot
+    hyprpicker
+
 
     # terminal
     wtype
@@ -54,7 +61,6 @@
     yazi
 
     # util
-    flameshot #see https://wiki.hyprland.org/FAQ/
     viewnior
     mpv
     (equibop.overrideAttrs (oldAttrs: {

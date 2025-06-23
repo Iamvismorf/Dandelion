@@ -16,7 +16,7 @@
   system.autoUpgrade = {
     enable = true;
     # flake = "path:${config.homeDirectory}/system/";
-    flake = args.self.outPath;
+    flake = "github:Iamvismorf/Dandelion";
     dates = "weekly";
     flags = [
       "--update-input"
