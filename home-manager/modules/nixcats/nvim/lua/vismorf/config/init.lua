@@ -1,3 +1,3 @@
-require("vixmeow.config.opts")
-require("vixmeow.config.keymaps")
-require("vixmeow.config.diagnostics")
+require("vismorf.config.opts")
+require("vismorf.config.keymaps")
+require("vismorf.config.diagnostics")

@@ -1,12 +1,19 @@
 require("lze").register_handlers(require("nixCatsUtils.lzUtils").for_cat)
 
--- require("vixmeow.cmp")
-require("vixmeow.config")
-require("vixmeow.format")
-require("vixmeow.general")
--- require("vixmeow.lint")
--- require("vixmeow.lsp")
+require("lze").load({
 
+	{ import = "vismorf.cmp" },
+	{ import = "vismorf.format" },
+	{ import = "vismorf.lint" },
+	{ import = "vismorf.lsp" },
+})
+-- require("vismorf.cmp")
+require("vismorf.config")
+-- require("vismorf.format")
+require("vismorf.plugins")
+-- require("vismorf.lint")
+-- require("vismorf.lsp")
+vim.cmd.colorscheme("kanso")
 local file = vim.api.nvim_buf_get_name(0)
 local is_dir = vim.fn.isdirectory(file) == 1
 

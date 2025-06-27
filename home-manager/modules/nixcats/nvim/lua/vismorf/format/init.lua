@@ -1,5 +1,6 @@
 -- formatter
-require("lze").load({
+-- require("lze").load({
+return {
 	"conform.nvim",
 	event = { "BufReadPre", "BufNewFile" },
 	after = function()
@@ -9,7 +10,7 @@ require("lze").load({
 				lua = { "stylua" },
 				typescript = { "prettierd" },
 				nix = { "alejandra" },
-				bash = { "shfmt" },
+				sh = { "shfmt" },
 			},
 
 			format_on_save = {
@@ -27,4 +28,5 @@ require("lze").load({
 			})
 		end)
 	end,
-})
+}
+-- })

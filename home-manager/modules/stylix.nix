@@ -7,12 +7,14 @@
   stylix.enable = true;
   stylix.autoEnable = true; # whether to apply to .target.<target> automatically
   stylix.targets = {
+    # gtk.enable = false;
     ghostty.enable = false;
     firefox = {
       enable = true;
       profileNames = ["vismorf"];
       colorTheme.enable = false;
     };
+
     neovim = {
       enable = false;
       plugin = false;

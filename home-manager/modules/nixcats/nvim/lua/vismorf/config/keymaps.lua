@@ -1,5 +1,8 @@
 local opts = { noremap = true, silent = true }
 local map = vim.keymap.set
+map("t", "<c-e>", "<C-\\><C-n>", opts)
+map("n", "<leader>t", ":term<cr>", opts)
+
 map("n", "<esc>", ":noh<cr>", opts)
 
 map({ "n", "v", "x" }, "<leader>y", '"+y', opts)
