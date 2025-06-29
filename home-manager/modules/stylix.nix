@@ -9,6 +9,7 @@
   stylix.targets = {
     # gtk.enable = false;
     ghostty.enable = false;
+    starship.enable = false;
     firefox = {
       enable = true;
       profileNames = ["vismorf"];

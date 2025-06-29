@@ -4,6 +4,14 @@
   ...
 }: {
   programs.yazi = {
+    flavors = {
+      kanso-ink = ./flavors/kanso-ink;
+    };
+    theme = {
+      flavor = {
+        dark = "kanso-ink";
+      };
+    };
     enableZshIntegration = true;
     enable = true;
     settings.mgr = {

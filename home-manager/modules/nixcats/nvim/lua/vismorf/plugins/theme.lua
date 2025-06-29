@@ -1,11 +1,9 @@
 require("kanso").setup({
-
 	italics = false,
-	undercurl = false,
+	undercurl = true,
 	colors = {
 		theme = {
 			ink = {
-
 				ui = {
 					float = {
 						fg_border = require("kanso.colors").setup({ theme = "ink" }).palette.inkGray2,

@@ -16,8 +16,8 @@
     ./modules/nh.nix
     ./modules/nixcats/default.nix
     # ./modules/neovim/default.nix
-    ./modules/ghostty.nix
-    ./modules/yazi.nix
+    ./modules/ghostty/ghostty.nix
+    ./modules/yazi/yazi.nix
     ./modules/firefox/firefox.nix
     ./modules/git.nix
     ./modules/xdg.nix

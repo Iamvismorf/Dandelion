@@ -201,7 +201,7 @@ in {
             suffix-path = true;
             suffix-LD = true;
             wrapRc = true; # chane back to true
-            aliases = ["vix"];
+            aliases = ["vix" "vim"];
           };
 
           categories = {

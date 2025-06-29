@@ -1,8 +1,10 @@
+-- TODO: rewrite map using nixcats
 return {
 	"bufferline.nvim",
 	after = function()
 		require("bufferline").setup({
 			options = {
+				separator_style = "slope",
 				enforce_regular_tabs = true,
 				indicator = {
 					style = "underline",

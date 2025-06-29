@@ -23,7 +23,6 @@
       info = "btop";
       ls = "eza --colour=always --icons=always -la";
       fetch = "fastfetch";
-      vim = "nvim";
       vide = "neovide";
       slip = "systemctl suspend";
       off = "shutdown now";

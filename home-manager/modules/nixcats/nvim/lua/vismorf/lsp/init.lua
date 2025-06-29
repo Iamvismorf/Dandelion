@@ -16,6 +16,7 @@ return {
 			"lua_ls",
 			"ts_ls",
 			"nixd",
+			"hyprls",
 		})
 		vim.lsp.config("*", {
 			capabilities = capabilities,
@@ -45,9 +46,12 @@ return {
 				},
 			},
 		})
+		vim.lsp.config("hyprls", {
+			root_markers = {
+				"hyprland.conf",
+			},
+		})
 		vim.lsp.config("lua_ls", {
-			-- capabilities = capabilities,
-			-- flags = flags,
 			root_markers = {
 				"lazy-lock.json",
 				".luarc.json",
@@ -58,6 +62,7 @@ return {
 				"selene.toml",
 				"selene.yml",
 				".git",
+				"default.nix",
 			},
 			settings = {
 				Lua = {

@@ -30,13 +30,12 @@
     fuzzel
     firefox
     waybar
-    
+
     #screenshot
     grim
     slurp
     hyprshot
     hyprpicker
-
 
     # terminal
     wtype
