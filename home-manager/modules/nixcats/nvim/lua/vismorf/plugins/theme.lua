@@ -1,6 +1,6 @@
 require("kanso").setup({
 	italics = false,
-	undercurl = true,
+	undercurl = false,
 	colors = {
 		theme = {
 			ink = {
@@ -15,6 +15,7 @@ require("kanso").setup({
 	overrides = function(c)
 		return {
 			WinSeparator = { fg = c.palette.inkGray2 },
+			["@string.special.url"] = { fg = c.theme.syn.special1, undercurl = false },
 		}
 	end,
 })

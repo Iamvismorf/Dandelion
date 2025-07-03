@@ -27,6 +27,7 @@
     waypaper
     hyprpicker
     kdePackages.dolphin
+    kdePackages.ark
 
     fuzzel
     firefox
@@ -46,7 +47,7 @@
     ripgrep
     fzf
     git
-    ghostty
+    # ghostty
     eza
     jq
     fd
