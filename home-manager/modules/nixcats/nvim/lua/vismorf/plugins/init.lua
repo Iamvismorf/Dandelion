@@ -7,6 +7,7 @@ require("lze").load({
 	{ import = "vismorf.plugins.context" },
 	{ import = "vismorf.plugins.cursor" },
 	{ import = "vismorf.plugins.flash" },
+	{ import = "vismorf.plugins.gitsigns" },
 	{ import = "vismorf.plugins.indent-blankline" },
 	{ import = "vismorf.plugins.lualine" },
 	{ import = "vismorf.plugins.snacks" },
