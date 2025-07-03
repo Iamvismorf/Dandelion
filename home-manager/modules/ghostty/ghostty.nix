@@ -1,11 +1,17 @@
-{lib, ...}: {
-  # home.file.".config/ghostty/shaders" = {
-  #   source = ./shaders;
-  #   # recursive = true;
-  # };
+{
+  lib,
+  args,
+  pkgs,
+  ...
+}: {
+  home.file.".config/ghostty/shaders" = {
+    source = ./shaders;
+    recursive = true;
+  };
 
   programs.ghostty = {
     enable = true;
+    package = args.ghostty.packages.${pkgs.stdenv.hostPlatform.system}.default;
     settings = {
       font-family = lib.mkForce "Hack Nerd Font";
       font-style = "bold";
@@ -16,7 +22,7 @@
       gtk-single-instance = true;
       link-url = false;
       theme = "kanso-ink";
-      # custom-shader = "shaders/cursor-smear.glsl";
+      custom-shader = "shaders/cursor_smear.glsl";
     };
     themes = {
       kanso-ink = {

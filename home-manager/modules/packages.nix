@@ -1,6 +1,7 @@
 {
   pkgs,
   config,
+  args,
   ...
 }: {
   nixpkgs.config = {
@@ -38,6 +39,7 @@
     hyprpicker
 
     # terminal
+    args.ghostty.packages.${pkgs.stdenv.hostPlatform.system}.default
     wtype
     socat
     wget

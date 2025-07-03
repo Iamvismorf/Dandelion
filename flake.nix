@@ -2,6 +2,8 @@
   description = "system flake";
   inputs = {
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
+    ghostty.url = "github:ghostty-org/ghostty";
+
     nh = {
       url = "github:nix-community/nh";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,6 +33,7 @@
     nixpkgs,
     home-manager,
     stylix,
+    ghostty,
     ...
   } @ args: let
     system = "x86_64-linux";
