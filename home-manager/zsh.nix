@@ -18,7 +18,7 @@
       home = "nh home switch ${flakePath}";
 
       homecollect = "nix-collect-garbage -d";
-      systemcollect = "sudo nix-collect-garbage -d";
+      nixoscollect = "sudo nix-collect-garbage -d";
 
       info = "btop";
       ls = "eza --colour=always --icons=always -la";
