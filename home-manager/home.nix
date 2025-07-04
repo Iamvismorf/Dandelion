@@ -15,7 +15,6 @@
     ./modules/starship.nix
     ./modules/nh.nix
     ./modules/nixcats/default.nix
-    # ./modules/neovim/default.nix
     ./modules/ghostty/ghostty.nix
     ./modules/yazi/yazi.nix
     ./modules/firefox/firefox.nix
@@ -28,11 +27,6 @@
     ./modules/waybar/waybar.nix
     ./zsh.nix
   ];
-
-  # programs.neovim.enable = true;
-
-  # home.file = {
-  # };
 
   wayland.windowManager.hyprland.systemd.enable = false;
 
