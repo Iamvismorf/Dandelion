@@ -1,7 +1,7 @@
 local opts = { noremap = true, silent = true }
 local map = vim.keymap.set
-map("t", "<c-e>", "<C-\\><C-n>", opts)
-map("n", "<leader>t", ":term<cr>", opts)
+map("t", "<c-e>", "<C-\\><C-n>", opts) -- go to normal mode in terminal
+map("n", "<M-t>", ":term<cr>", opts)
 
 map("n", "<esc>", ":noh<cr>", opts)
 

@@ -168,7 +168,7 @@ in {
 
               nvim-surround
 
-              # gitsigns-nvim
+              gitsigns-nvim
             ];
           };
         };

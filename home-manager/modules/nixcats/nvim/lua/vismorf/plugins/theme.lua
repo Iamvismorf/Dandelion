@@ -1,3 +1,4 @@
+vim.o.cursorline = true
 require("kanso").setup({
 	italics = false,
 	undercurl = false,
